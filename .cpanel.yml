@@ -13,15 +13,15 @@ deployment:
 
     - /bin/cp .eslintrc $DEPLOYPATH
     - /bin/cp .stylelintrc.json $DEPLOYPATH
-    - /bin/cp .404.php $DEPLOYPATH
-    - /bin/cp .about-page.php $DEPLOYPATH
-    - /bin/cp .comments.php $DEPLOYPATH
-    - /bin/cp .composer.json $DEPLOYPATH
-    - /bin/cp .footer.php $DEPLOYPATH
-    - /bin/cp .front-page.php $DEPLOYPATH
-    - /bin/cp .functions.php $DEPLOYPATH
-    - /bin/cp .header.php $DEPLOYPATH
-    - /bin/cp .index.php $DEPLOYPATH
+    - /bin/cp 404.php $DEPLOYPATH
+    - /bin/cp about-page.php $DEPLOYPATH
+    - /bin/cp comments.php $DEPLOYPATH
+    - /bin/cp composer.json $DEPLOYPATH
+    - /bin/cp footer.php $DEPLOYPATH
+    - /bin/cp front-page.php $DEPLOYPATH
+    - /bin/cp functions.php $DEPLOYPATH
+    - /bin/cp header.php $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
     - /bin/cp LICENSE $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
     - /bin/cp page.php $DEPLOYPATH
