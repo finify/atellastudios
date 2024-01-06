@@ -1,0 +1,356 @@
+@import "./bootstrap/scss/bootstrap";
+
+@mixin text-font($color,$align,$size){
+    color:$color;
+    text-align: $align;
+    font-family: 'League Spartan';
+    font-size: $size;
+    font-style: normal;
+  }
+
+.header-title{
+    @include text-font(#000000,center,32px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+/********** Header **********/
+header{
+    #menu-button{
+        animation-fill-mode: forwards!important;
+    }
+}
+.header-menu-mobile{
+    background-color:rgba(0, 0, 0, 0.78);
+    backdrop-filter: blur(23px) brightness(0.35);
+    &__top{
+        // img{
+        //    width: 60px; 
+        //    height: 60px; 
+        // }
+    }
+    &__content{
+        height: 60vh;
+        img{
+            width:50px!important;
+        }
+        h4{
+            @include text-font(#000000,left,15px);
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+}
+/********** Header **********/
+/********** Footer **********/
+.site-footer{
+
+    &__links{
+        color: #FFF;
+        text-align: center;
+        font-family: 'League Spartan';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+
+    }
+}
+
+/********** Mobile Video Section 1 *********/
+.mobile-video-1{
+
+    &__video-container{
+        width: 100%;
+        height: 60vh;
+        border-radius: 35px!important;
+    }
+
+    &__text-container{
+        padding: 10px;
+        font-family: 'League Spartan';
+        border-radius: 35px;
+        background: rgba(0, 0, 0, 0.29);
+        backdrop-filter: blur(51.54999923706055px);
+        margin-top:-100px;
+        align-items: center;
+
+        h2{
+            @include text-font(#FFF,center,30.748px);
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        p{
+            @include text-font(#FFF,center,14.413px);
+            font-weight: 400;
+            line-height: inherit;
+            text-transform: uppercase;
+        }
+    }
+
+    iframe{
+        width: 100%;
+        border-radius: 35px!important;
+        background-position: 200px;
+       
+        // pointer-events: none;
+    }
+
+    // video{
+    //     width: 100%;
+    //     border-radius: 35px!important;
+    //     background-position: 200px;
+       
+    //     // pointer-events: none;
+    // }
+}
+
+
+/********** Mobile Brands 1 *********/
+.mobile-brands{
+    h2{
+        @include text-font(#000000,center,30.748px);
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    p{
+        @include text-font(#000000,center,14.413px);
+        font-weight: 400;
+        line-height: inherit;
+        text-transform: uppercase;
+    }
+}
+
+/********** Mobile Pricing *********/
+
+.mobile-pricing{
+    background-color: #F0F2FF;
+
+    .card{
+        border-radius: 15px;
+        padding: 24px 21px 24px 21px;
+
+        .first-info{
+            h1{
+                @include text-font(#000000,left,24px);
+                font-weight: 400;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+            p{
+                @include text-font(#000000,left,14px);
+                font-weight: 400;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+        }
+
+        
+
+        .card-body{
+            .card-body__top{
+                .card-title{
+                    @include text-font(#000000,left,24px);
+                    font-weight: 700;
+                    line-height: normal;
+                    text-transform: capitalize;
+                }
+                a{
+                    border: 1px solid #565656;
+                    background: rgba(255, 98, 98, 0.94);
+                    color:white!important;
+                    backdrop-filter: blur(53.70000076293945px);
+                    pointer-events: none;
+                }
+            }
+
+            ul{
+                list-style-image: url('../img/liststyle.png');
+                list-style-position: inside;
+                padding-left: 0;
+                margin-left: 0;
+    
+                li{
+                    @include text-font(#000000,left,20px);
+                    font-weight: 200;
+                    line-height: inherit;
+                    align-items: center;
+                }
+            }
+
+            .price-amount{
+                @include text-font(#000000,left,24px);
+                font-weight: 700;
+                line-height: inherit;
+            }   
+        }
+
+        
+
+        
+
+        
+    }
+}
+
+
+/********** swiper *********/
+.mobile-swipe{
+    .gap-5 {
+        gap: 5rem !important;
+    }    
+}
+.swiper-content{
+    h1{
+        @include text-font(#000000,left,24px);
+        font-weight: 800;
+        line-height: inherit;
+    }
+    p{
+        @include text-font(#000000,left,14.413px);
+        font-weight: 400;
+        line-height: inherit;
+    }
+}
+
+/******* Swiper end *******/
+
+
+/******* How it works end *******/
+.how-it-works{
+    .step-text{
+        @include text-font(#ffffff,left,40px);
+        font-weight: 400;
+        line-height: inherit;
+    }
+    .video-wrapper{
+        width: 100%;
+        height: 40vh;
+        border-radius: 35px!important;
+
+        .top-text{
+            pointer-events: none;
+            background: rgba(0, 0, 0, 0.11);
+            border:0px;
+            font-family: 'Space Grotesk';
+        }
+
+        .video-content{
+            // background: rgba(0, 0, 0, 0.5);
+            background: rgb(10,10,16);
+            background: linear-gradient(0deg, rgba(10,10,16,0.42622986694677867) 0%, rgba(92,92,97,0.7175463935574229) 35%, rgba(255,255,255,0) 100%);
+            backdrop-filter: blur(20px) brightness(1.05) opacity(0%) saturate(102%);
+    
+            h6{
+                @include text-font(#ffffff,left,18px);
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+    iframe{
+        width: 100%;
+        height: 40vh!important;
+        border-radius: 35px!important;
+        background-position: 200px;
+       
+        pointer-events: none;
+    }
+    
+}
+/******* How it works end *******/
+
+
+/******* Past Work end *******/
+.past-work{
+    .video-wrapper{
+        width: 100%;
+        height: 40vh;
+        border-radius: 35px!important;
+    }
+    iframe{
+        width: 100%;
+        height: 40vh!important;
+        border-radius: 35px!important;
+        background-position: 200px;
+       
+        // pointer-events: none;
+    }
+}
+/******* Past Work end *******/
+
+/* innovation  starts */
+.innovation{
+    .swiper {
+        width: 100%;
+        height: 400px;
+
+        .swiper-slide {
+            text-align: center;
+            padding:0px!important;
+            overflow: hidden;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .inno-bottom-content{
+                background: rgba(255, 255, 255, 0.10);
+                backdrop-filter: blur(60px) brightness(1.05) opacity(90%) saturate(102%);
+                h4{
+                    @include text-font(#000000,center,18px);
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+          }
+        
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-bottom: 0px;
+          }
+        
+        //   .swiper-slide {
+        //     // width: 300px!important;
+        //   }
+      }
+}
+
+/* innovation  ENDS */
+
+
+/* Pixel  Start */
+.pixels{
+    .pixels__text-wrapper{
+        
+        background: #D5D5D8;
+        backdrop-filter: blur(60px) brightness(1.05) opacity(90%) saturate(102%);
+        .pixels__text-content{
+            border: 1px solid rgba(255, 255, 255, 0.43);
+            h1{
+                @include text-font(#000000,center,24px);
+                font-weight: 800;
+                line-height: normal;
+            }
+            p{
+                @include text-font(#000000,center,15px);
+                font-weight: 400;
+                line-height: inherit;
+            }
+        }
+    }
+}
+/* innovation  ENDS */
+
