@@ -2,7 +2,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/paybpymi/atellastudios.paybuymart.com/wp-content/themes/atellastudios
+    - export DEPLOYPATH=/home/paybpymi/atellastudios.paybuymart.com/wp-content/themes/atellastudios/
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
     - /bin/cp -R inc $DEPLOYPATH
