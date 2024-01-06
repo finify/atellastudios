@@ -31,7 +31,7 @@ get_header();
 					<div class="col-12">
 						<div class="mobile-video-1__text-container">
 							<div class="pixels__text-content d-flex flex-column align-items-center rounded-5 p-4">
-								<h2>Ecommerce1 </br>Rendering Expert</h2>
+								<h2>Ecommerce2 </br>Rendering Expert</h2>
 								<p>contact us today to discuss your project, explore ideas, and experience the transformative power of 3D modeling. Your vision is just a click away from becoming a stunning reality!</p>
 								<a href="#" class="btn btn-light btn-lg rounded-5 w-50 mt-2 text-black">Get Started</a>
 							</div>
